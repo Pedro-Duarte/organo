@@ -8,6 +8,9 @@ const Time = (props) => {
   return(
     <section className="time" style={cssFundo}>
       <h3 style={cssBorda}>{props.nome}</h3>
+      {props.colaboradores.map( colaborador => <Colaborador /> )}
+      {/* <Colaborador />
+      <Colaborador /> */}
     </section>
   )
 }
